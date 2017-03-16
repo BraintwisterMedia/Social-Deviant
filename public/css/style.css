@@ -1,0 +1,133 @@
+body {
+  background-color: #222;
+  color: #fff;
+  font: 14px "Quicksand", Helvetica, Arial, sans-serif;
+}
+button.sidebar-btn{
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+header#app-header,
+h1#logo,
+header#app-header ul.nav,
+ul#main-tabs{
+  display: flex;
+  align-items: center;
+}
+header#app-header{
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+header#app-header h1#logo{
+  font-size: 1.4rem;
+  font-weight: 100;
+  margin: 0;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+h1#logo small{
+  font-size: 0.8rem;
+  color: #888;
+  margin-left: .5rem;
+}
+header#app-header ul.nav{
+  /*display: none;*/
+}
+header#app-header ul.nav li{
+  margin-right: 1rem;
+}
+
+header#app-header ul.nav li:last-child{
+  /*margin-right: 0;*/
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+ul#main-tabs{
+  padding: 0;
+  margin: 0.4rem 0 0;
+  justify-content: space-between;
+  /*border-bottom: .1rem solid #333;*/
+}
+ul#main-tabs li{
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 0 0.1rem;
+  text-align: center;
+  border-radius: .25em;
+}
+ul#main-tabs li:last-child{
+  /*margin-right: 0;*/
+}
+ul#main-tabs li a{
+  padding: 0.5rem;
+  display: block;
+  color: #fff;
+  font-size: 2rem;
+
+  /*transition: .2s all ease;*/
+}
+ul#main-tabs .nav-link.active{
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+ul#main-tabs li:hover,
+ul#main-tabs li:focus{
+  background-color: rgba(255, 255, 255, 1);
+  outline: none;
+}
+ul#main-tabs li:active{
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+ul#main-tabs li:hover a,
+ul#main-tabs li:active a,
+ul#main-tabs li:focus a{
+  color: #333;
+}
+a {
+  color: #00B7FF;
+}
+.tab-content{
+  margin-top:  0.4rem;
+  padding: 0.4rem 1rem;
+  background-color: #555;
+}
+.tab-content header.social{
+  text-align: center;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.7);
+}
+header.social h2{
+  margin: 0.6rem 0 1rem;
+  font-size: 1.5rem;
+}
+.widget-grid{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0.4rem -0.2rem 0;
+}
+.widget{
+  flex: 1 20rem;
+  height: 25rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0.2rem;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.4);
+}
+footer#app-footer{
+  padding: 0.5rem 0;
+}
+footer#app-footer .legal{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+footer#app-footer .legal p{
+  margin: 0;
+}
